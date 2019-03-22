@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>中后台MockServer</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/zdialog.css" />
+  </head>
+  <body>
+    <h3>
+      <img src="./images/favicon.ico" alt="" class="logo" />
+      中后台MockServer
+    </h3>
+    <form>
+      <fieldset>
+        <legend>添加Mock URL</legend>
+        <div class="editor" id="editor"></div>
+        <div class="action-content">
+          <Button type="button" id="jadd">添加</Button>
+          <Button type="reset" id="jreset">清空</Button>
+          <Button type="button" id="testInput">测试</Button>
+        </div>
+      </fieldset>
+      <div>
+        <fieldset>
+          <legend>现有Mock URL</legend>
+          <div class="fl">
+            <table class="gridtable">
+              <thead>
+                <tr>
+                  <th>pname</th>
+                  <th>path</th>
+                  <th style="width: 54px;">Action</th>
+                  <th>templ</th>
+                </tr>
+              </thead>
+              <tbody id="mock-list"></tbody>
+            </table>
+          </div>
+        </fieldset>
+      </div>
+    </form>
+    <script src="./js/ace/ace.js"></script>
+    <script src="./js/ace/theme-solarized_light.js"></script>
+    <script src="./js/ace/mode-javascript.js"></script>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/zdialog.js"></script>
+    <script src="./js/tools.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
